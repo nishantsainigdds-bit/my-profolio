@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nishant Saini | Web Developer & Student Creator</title>
+  <meta name="description" content="Portfolio of Nishant Saini – Web Developer, Python Programmer & Video Editor studying at Poornima University, Jaipur." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ───────────── CURSOR ───────────── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ───────────── LOADER ───────────── -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-text">N<span class="accent">S</span></span>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ───────────── NAV ───────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">N<span class="accent">S</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-text="Home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+        <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+        <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+        <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+      </ul>
+      <a href="profile.html" class="btn-primary nav-cta">My Profile</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ───────────── HERO ───────────── -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content container">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for internship & projects
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Nishant</span><br />
+          <span class="typed-wrapper">
+            <span id="typed"></span><span class="typed-cursor">|</span>
+          </span>
+        </h1>
+        <p class="hero-desc">
+          Student at Poornima University crafting digital experiences through
+          <strong>web development</strong>, <strong>Python programming</strong>, and
+          <strong>creative video editing</strong>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">View Projects <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#contact" class="btn-outline">Get in Touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">1+</span>
+            <span class="stat-label">Year Exp.</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-core">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="avatar-svg">
+              <defs>
+                <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#7c3aed"/>
+                  <stop offset="100%" style="stop-color:#06b6d4"/>
+                </linearGradient>
+              </defs>
+              <circle cx="100" cy="100" r="100" fill="url(#avatarGrad)" opacity="0.15"/>
+              <circle cx="100" cy="78" r="34" fill="url(#avatarGrad)" opacity="0.9"/>
+              <ellipse cx="100" cy="165" rx="55" ry="38" fill="url(#avatarGrad)" opacity="0.9"/>
+            </svg>
+            <div class="avatar-initials">NS</div>
+          </div>
+          <div class="floating-badge badge-html">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2"/></svg>
+            HTML5
+          </div>
+          <div class="floating-badge badge-python">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2"/></svg>
+            Python
+          </div>
+          <div class="floating-badge badge-video">
+            <svg viewBox="0 0 24 24" fill="none"><polygon points="23 7 16 12 23 17 23 7" stroke="currentColor" stroke-width="2"/><rect x="1" y="5" width="15" height="14" rx="2" stroke="currentColor" stroke-width="2"/></svg>
+            Video
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </a>
+  </section>
+
+  <!-- ───────────── ABOUT ───────────── -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who Am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z" stroke="currentColor" stroke-width="2"/><path d="M6 12v5c3 3 9 3 12 0v-5" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Student Creator</h3>
+          <p>BTech student at Poornima University (2025–2029), building practical projects and learning cutting-edge technologies daily.</p>
+        </div>
+        <div class="about-card glass">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="2"/><polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Web Developer</h3>
+          <p>Crafting responsive, visually stunning websites using HTML5, JavaScript, and modern CSS with a passion for UI/UX design.</p>
+        </div>
+        <div class="about-card glass">
+          <div class="about-icon">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" stroke="currentColor" stroke-width="2"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2"/></svg>
+          </div>
+          <h3>Video Editor</h3>
+          <p>Senior Video Editor at Sanfort Preschool since January 2025 — creating engaging, story-driven video content for educational brands.</p>
+        </div>
+        <div class="about-card glass highlight-card">
+          <div class="about-quote">"</div>
+          <p class="quote-text">My goal is to grow in the fields of <strong>Software Development</strong>, <strong>AI/ML</strong>, and <strong>Digital Content Creation</strong>, while contributing to impactful projects.</p>
+          <div class="quote-author">— Nishant Saini</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── SKILLS ───────────── -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category glass">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🌐</span> Web Development
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>HTML5</span><span>90%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="90" style="--w:90%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>JavaScript</span><span>75%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="75" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>CSS3 / UI Design</span><span>80%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="80" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>WhatsApp API</span><span>65%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="65" style="--w:65%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🐍</span> Programming
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Python</span><span>78%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="78" style="--w:78%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Problem Solving</span><span>72%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="72" style="--w:72%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category glass">
+          <h3 class="skill-cat-title">
+            <span class="cat-icon">🎬</span> Creative
+          </h3>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Video Editing</span><span>88%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="88" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>UI/UX Design</span><span>70%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="70" style="--w:70%"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Content Creation</span><span>82%</span></div>
+              <div class="bar-bg"><div class="bar-fill" data-width="82" style="--w:82%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-tags-card glass">
+          <h3 class="skill-cat-title"><span class="cat-icon">⚡</span> Tech Stack</h3>
+          <div class="tag-cloud">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Python</span>
+            <span class="tag">WhatsApp API</span>
+            <span class="tag">Git</span>
+            <span class="tag">Responsive Design</span>
+            <span class="tag">UI/UX</span>
+            <span class="tag">Video Editing</span>
+            <span class="tag">AI/ML</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── EXPERIENCE ───────────── -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Experience & Education</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item right">
+          <div class="timeline-dot active"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-badge work">Work</div>
+            <h3>Senior Video Editor</h3>
+            <h4>Sanfort Preschool</h4>
+            <span class="timeline-date">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/><line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/></svg>
+              Jan 2025 – Present · 1 yr 2 mos
+            </span>
+            <p>Producing and editing high-quality educational video content for a leading preschool brand across Rajasthan, ensuring compelling storytelling and brand consistency.</p>
+            <div class="tl-tags"><span>Video Editing</span><span>Content Strategy</span><span>Branding</span></div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-dot edu"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-badge edu">Education</div>
+            <h3>Bachelor of Technology (BTech)</h3>
+            <h4>Poornima University, Jaipur</h4>
+            <span class="timeline-date">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/><line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/></svg>
+              Aug 2025 – Aug 2029
+            </span>
+            <p>Pursuing a BTech degree with focus on software development, Artificial Intelligence, and Machine Learning. Actively building projects and participating in tech events.</p>
+            <div class="tl-tags"><span>Software Dev</span><span>AI/ML</span><span>Networking</span></div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot cert"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-badge cert">Certifications</div>
+            <h3>Tech Certifications</h3>
+            <h4>Multiple Achievements</h4>
+            <span class="timeline-date">
+              <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"/><line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"/></svg>
+              2025
+            </span>
+            <ul class="cert-list">
+              <li>🏆 Pravaah'25 – Annual Tech Fest</li>
+              <li>🏙️ Jaipur 2047 Summit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── PROJECTS ───────────── -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Projects</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card glass featured">
+          <div class="project-glow"></div>
+          <div class="project-img project-img-1">
+            <div class="project-overlay">
+              <span class="proj-tag">Web App</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>EduPulse LMS Platform</h3>
+            <p>A comprehensive Learning Management System with student dashboards, syllabus pages, test series, and fee management built with vanilla HTML/CSS/JS.</p>
+            <div class="proj-tech"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="project-card glass">
+          <div class="project-glow"></div>
+          <div class="project-img project-img-2">
+            <div class="project-overlay">
+              <span class="proj-tag">Chatbot</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>AI Guru Ji Chatbot</h3>
+            <p>Custom AI chatbot widget integrated across multiple pages to provide interactive student assistance and study guidance.</p>
+            <div class="proj-tech"><span>JavaScript</span><span>AI API</span></div>
+          </div>
+        </div>
+        <div class="project-card glass">
+          <div class="project-glow"></div>
+          <div class="project-img project-img-3">
+            <div class="project-overlay">
+              <span class="proj-tag">WhatsApp API</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>WhatsApp Notification System</h3>
+            <p>Dynamic WhatsApp API integration for real-time student notifications, enrollment confirmations and updates.</p>
+            <div class="proj-tech"><span>WhatsApp API</span><span>JavaScript</span></div>
+          </div>
+        </div>
+        <div class="project-card glass">
+          <div class="project-glow"></div>
+          <div class="project-img project-img-4">
+            <div class="project-overlay">
+              <span class="proj-tag">Python</span>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Python Automation Scripts</h3>
+            <p>Collection of practical Python scripts for automation, data processing, and educational content management.</p>
+            <div class="proj-tech"><span>Python</span><span>Automation</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── CONTACT ───────────── -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In Touch</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card glass">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>Location</h4>
+              <p>114-115 Jyoti Colony, Near Bus Stand,<br />Hanumangarh Junction, 335512 (Raj.)</p>
+            </div>
+          </div>
+          <div class="contact-card glass">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:nishant.sanfort@gmail.com">nishant.sanfort@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card glass">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/nishant-saini-877976382" target="_blank" rel="noopener">nishant-saini-877976382</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form glass" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input type="text" id="fname" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="femail">Email Address</label>
+              <input type="email" id="femail" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="fsubject">Subject</label>
+            <input type="text" id="fsubject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="fmessage">Message</label>
+            <textarea id="fmessage" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-w" id="sendBtn">
+            Send Message
+            <svg viewBox="0 0 24 24" fill="none"><line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2"/><polygon points="22 2 15 22 11 13 2 9 22 2" stroke="currentColor" stroke-width="2" fill="none"/></svg>
+          </button>
+          <div class="form-toast" id="formToast"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────── FOOTER ───────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">N<span class="accent">S</span></span>
+          <p>Student Creator · Web Developer · Video Editor</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="profile.html">Profile</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/nishant-saini-877976382" target="_blank" class="social-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+          <a href="mailto:nishant.sanfort@gmail.com" class="social-btn" title="Email">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/nishant-saini-877976382" target="_blank" class="social-btn" title="Portfolio">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="2"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Nishant Saini. Designed & Built with <span class="heart">♥</span> in Rajasthan, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
