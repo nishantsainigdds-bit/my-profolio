@@ -102,10 +102,10 @@ function initTyped() {
   if (!el) return;
 
   const phrases = [
-    'Student Creator',
+    'Founder @ EdHills',
     'Web Developer',
     'Python Programmer',
-    'Video Editor',
+    'Student Creator',
     'UI/UX Designer',
     'Tech Enthusiast'
   ];
